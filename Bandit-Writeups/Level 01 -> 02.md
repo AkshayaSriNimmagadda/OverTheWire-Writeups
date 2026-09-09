@@ -30,6 +30,8 @@ When prompted for the password, I entered the password obtained from the `readme
 
 The login was successful, and I was connected to the Bandit Level 1 server.
 
+----------------------------------------------------------------------------------------
+
 ### Step 2: List the Files
 
 I checked the files available in the current directory using:
@@ -45,6 +47,8 @@ The output showed:
 ```
 
 This means there is a file named `-` in the current directory.
+
+----------------------------------------------------------------------------------------
 
 ### Step 3: Read the `-` File and Obtain the Password
 
@@ -67,6 +71,8 @@ The command displayed the contents of the `-` file.
  The contents of the file contain the **PASSWORD** required to log in to Bandit Level 2.
 
 I copied the password for the next login.
+
+----------------------------------------------------------------------------------------
 
 ### Step 4: Exit and Log in to Level 2
 
