@@ -8,7 +8,7 @@ This repository documents my progress as I work through different challenges, al
 
 | Wargame       | Status         | Writeups                            |
 | ------------- | -------------- | ----------------------------------- |
-| **Bandit**    | 🚧 In Progress | [View](./Bandit-Writeups/README.md) |
+| **Bandit**    | 🚧 In Progress |[View](./Bandit-Writeups) |
 | **Natas**     | ⏳ Not Started  | —                                   |
 | **Leviathan** | ⏳ Not Started  | —                                   |
 | **Krypton**   | ⏳ Not Started  | —                                   |
