@@ -48,24 +48,18 @@ This means there is a file named `--spaces in this filename--` in the current di
 
 ### Step 3: Read the File and Obtain the Password
 
-The filename contains **spaces**. If we try to use the filename directly:
+The filename contains **spaces** and starts with `--`, so we need to specify it correctly.
 
-```bash
-cat --spaces in this filename--
-```
-
-the shell treats each word in `--spaces in this filename--` as separate part.
-./ tells Linux that the file is in the current directory and helps treat --spaces in this filename-- as a filename rather than an option.
-To tell Linux that the whole name is one filename, we put the filename inside quotes:
+`./` tells Linux that the file is in the **current directory**, while quotes tell the shell to treat the entire name as **one filename**.
 
 ```bash
 cat "./--spaces in this filename--"
 ```
 
-
-The command displayed contents of the file which is the **PASSWORD** required to log in to Bandit Level 3.
+The command displayed the **PASSWORD** required to log in to Bandit Level 3.
 
 I copied the password for the next login.
+
 
 ### Step 4: Exit and Log in to Level 3
 
