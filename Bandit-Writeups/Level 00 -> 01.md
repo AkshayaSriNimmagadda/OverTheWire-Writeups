@@ -44,11 +44,8 @@ After logging in, I checked the files available in the current directory using:
 ```bash
 ls
 ```
-The output:
+The output: readme
 
-```text
-readme
-```
 
 This showed that there was a file named `readme` in the current directory.
 
