@@ -19,7 +19,7 @@ The goal of this level is to connect to the **Bandit Level 0** server using SSH 
 
 # 🔍 Solution
 
-## Step 1️:Connect to the Bandit Server
+## Step 1️: Connect to the Bandit Server
 
 First, I connected to the Bandit server using SSH on port `2220`.
 
@@ -37,7 +37,7 @@ After entering the password, the connection was successfully established.
 
 ---
 
-## Step 2:List the Files
+## Step 2: List the Files
 
 After logging in, I checked the files available in the current directory using:
 
@@ -51,7 +51,7 @@ This showed that there was a file named `readme` in the current directory.
 
 ---
 
-## Step 3:Read the `readme` File
+## Step 3: Read the `readme` File
 
 I used the `cat` command to display the contents of the file:
 
@@ -67,7 +67,7 @@ I copied the password to use for the next login.
 
 ---
 
-## step 4:Exit the Current SSH Session
+## Step 4: Exit the Current SSH Session
 
 After obtaining the password, I exited the current SSH session:
 
@@ -76,7 +76,7 @@ exit
 ```
 ---
 
-## Step 5:Log in to Level 1
+## Step 5: Log in to Level 1
 
 Next, I connected to the **Bandit Level 1** account:
 
