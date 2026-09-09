@@ -47,10 +47,7 @@ Each writeup focuses on:
 * 🔎 **Approach** — The reasoning and steps used to solve the challenge
 * 💻 **Commands & Techniques** — Linux commands, tools, and techniques used
 * 📚 **Explanation** — What I learned and why the solution works
-
-## ⚠️ Disclaimer
-
-These writeups are intended for **educational purposes** and document my personal learning process.
+----------------
 
 If you're working through the challenges yourself, I recommend attempting each level independently before referring to the solutions.
 
