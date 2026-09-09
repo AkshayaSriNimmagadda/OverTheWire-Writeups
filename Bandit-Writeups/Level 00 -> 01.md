@@ -93,8 +93,7 @@ When prompted for the password, I entered the password obtained from the `readme
 
 The login was successful, and I was now connected to the **Bandit Level 1** server.
 
----
-----------------------------------------------------------------------------------------
+
 
 # 🧠 Concepts Learned
 
