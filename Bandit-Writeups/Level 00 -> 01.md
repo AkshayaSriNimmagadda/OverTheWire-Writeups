@@ -100,6 +100,3 @@ ssh bandit1@bandit.labs.overthewire.org -p 2220
 
 ---
 
-
-🎓 **Main Lesson:** Always start by exploring the environment and checking the available files before trying more advanced techniques.
-
