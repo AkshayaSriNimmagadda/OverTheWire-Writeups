@@ -50,8 +50,4 @@ Each writeup focuses on:
 
 ---
 
-If you're working through the challenges yourself, I recommend attempting each level independently before referring to the solutions.
-
----
-
 > **Learn by solving. Document by understanding. Improve by doing.**
