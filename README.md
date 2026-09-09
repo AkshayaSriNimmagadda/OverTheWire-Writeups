@@ -7,15 +7,15 @@ This repository documents my progress as I work through different challenges, al
 ## 🕹️ Wargames
 
 | Wargame       | Status         | Writeups                  |
-| ------------- | -------------- | ------------------------- |
+| ------------- | -------------- | -------------------------- |
 | **Bandit**    | 🚧 In Progress | [View](./Bandit-Writeups) |
-| **Natas**     | ⏳ Not Started  | —                         |
-| **Leviathan** | ⏳ Not Started  | —                         |
-| **Krypton**   | ⏳ Not Started  | —                         |
-| **Narnia**    | ⏳ Not Started  | —                         |
-| **Behemoth**  | ⏳ Not Started  | —                         |
-| **Utumno**    | ⏳ Not Started  | —                         |
-| **Maze**      | ⏳ Not Started  | —                         |
+| **Natas**     | ⏳ Not Started  | —                          |
+| **Leviathan** | ⏳ Not Started  | —                          |
+| **Krypton**   | ⏳ Not Started  | —                          |
+| **Narnia**    | ⏳ Not Started  | —                          |
+| **Behemoth**  | ⏳ Not Started  | —                          |
+| **Utumno**    | ⏳ Not Started  | —                          |
+| **Maze**      | ⏳ Not Started  | —                          |
 
 ## 📁 Repository Structure
 
@@ -43,11 +43,12 @@ This repository is a record of my hands-on learning journey through **OverTheWir
 
 Each writeup focuses on:
 
-*🎯 Challenge Objective — What the level asks you to find or accomplish
-*💻 Commands Used — Linux commands and tools used, along with their meaning 
-*🔍 Solution — The step-by-step process followed to solve the challenge
-*🧠 Concepts Learned — What I learned and why the solution works
-----------------
+* 🎯 **Challenge Objective** — What the level asks you to find or accomplish
+* 💻 **Commands Used** — Linux commands and tools used, along with their meaning
+* 🔍 **Solution** — The step-by-step process followed to solve the challenge
+* 🧠 **Concepts Learned** — What I learned and why the solution works
+
+---
 
 If you're working through the challenges yourself, I recommend attempting each level independently before referring to the solutions.
 
