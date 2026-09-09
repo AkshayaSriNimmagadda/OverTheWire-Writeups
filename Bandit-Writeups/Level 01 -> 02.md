@@ -70,7 +70,7 @@ I copied the password for the next login.
 
 ### Step 4: Exit and Log in to Level 2
 
-After obtaining the **🔑 password**, I exited the current SSH session:
+After that, I exited the current SSH session:
 
 ```bash
 exit
@@ -82,7 +82,7 @@ Then, I connected to the Bandit Level 2 account:
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the ** password**, I entered the password obtained from the `-` file.
+When prompted for the **password**, I entered the password obtained from the `-` file.
 
 The login was successful, and I was now connected to the **Bandit Level 2** server.
 
