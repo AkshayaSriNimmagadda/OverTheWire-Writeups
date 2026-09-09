@@ -4,8 +4,6 @@
 
 The goal of this level is to connect to the **Bandit Level 0** server using SSH and find the password required to log in to **Level 1**.
 
----
-
 ## 🛠️ Commands Used
 
 | Command | Meaning                    |
@@ -15,7 +13,6 @@ The goal of this level is to connect to the **Bandit Level 0** server using SSH 
 | `cat`   | Display file contents      |
 | `exit`  | Exit the current session   |
 
----
 
 # 🔍 Solution
 
@@ -97,6 +94,7 @@ When prompted for the password, I entered the password obtained from the `readme
 The login was successful, and I was now connected to the **Bandit Level 1** server.
 
 ---
+----------------------------------------------------------------------------------------
 
 # 🧠 Concepts Learned
 
