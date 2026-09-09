@@ -43,10 +43,10 @@ This repository is a record of my hands-on learning journey through **OverTheWir
 
 Each writeup focuses on:
 
-* 🎯 **Challenge Objective** — What the level asks you to find or accomplish
-* 🔎 **Approach** — The reasoning and steps used to solve the challenge
-* 💻 **Commands & Techniques** — Linux commands, tools, and techniques used
-* 📚 **Explanation** — What I learned and why the solution works
+*🎯 Challenge Objective — What the level asks you to find or accomplish
+*💻 Commands Used — Linux commands and tools used, along with their meaning 
+*🔍 Solution — The step-by-step process followed to solve the challenge
+*🧠 Concepts Learned — What I learned and why the solution works
 ----------------
 
 If you're working through the challenges yourself, I recommend attempting each level independently before referring to the solutions.
