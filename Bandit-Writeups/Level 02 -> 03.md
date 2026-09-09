@@ -30,6 +30,8 @@ When prompted for the password, I entered the password obtained in Level 1.
 
 The login was successful, and I was connected to the Bandit Level 2 server.
 
+----------------------------------------------------------------------------------------
+
 ### Step 2: List the Files
 
 I checked the files available in the current directory using:
@@ -46,6 +48,8 @@ The output showed:
 
 This means there is a file named `--spaces in this filename--` in the current directory.
 
+----------------------------------------------------------------------------------------
+
 ### Step 3: Read the File and Obtain the Password
 
 The filename contains **spaces** and starts with `--`, so we need to specify it correctly.
@@ -60,6 +64,7 @@ The command displayed the **PASSWORD** required to log in to Bandit Level 3.
 
 I copied the password for the next login.
 
+----------------------------------------------------------------------------------------
 
 ### Step 4: Exit and Log in to Level 3
 
@@ -87,4 +92,4 @@ The login was successful, and I was now connected to the Bandit Level 3 server.
 * **Spaces in filenames** — Spaces separate arguments in the Linux shell.
 * **Quotes (`" "`)** — Used to treat a filename containing spaces as a single argument.
 * **`./`** — Used to specify a file in the current directory.
-* Using the password obtained from one level to access the next level.
+
