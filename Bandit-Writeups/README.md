@@ -15,10 +15,9 @@ The individual writeups are organized according to the progression of the Bandit
 Each writeup covers:
 
 * Challenge objective
-* Approach used
-* Commands and techniques
-* Explanation of the solution
-
+* Commands used and Their meaning
+* Solution
+* Concepts Learned
 ## 🎯 Goal
 
 The purpose of these writeups is to document my learning journey, understand the reasoning behind each solution, and build a useful reference for future challenges.
