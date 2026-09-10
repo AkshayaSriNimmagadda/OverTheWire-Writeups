@@ -2,19 +2,17 @@
 
 ##  Objective
 
-The goal of this level is to find the password for the next level. The password is stored in a file named `--spaces in this filename--` in the home directory.
-
-Since the filename contains **spaces**, we need to handle the filename correctly when using Linux commands.
+The goal of this level is to find the password for the next level. The password is stored in a file named `--spaces in this filename--` in the current directory.
 
 ##  Commands Used
 
-| Command | Meaning                                 |
-| ------- | --------------------------------------- |
-| `ssh`   | Connect to a remote server              |
-| `ls`    | List files and directories              |
-| `cat`   | Display file contents                   |
-| `./`    | Specify a file in the current directory |
-| `exit`  | Exit the current session                |
+| Command | Meaning                                   |
+| ------- | ---------------------------------------   |
+| `ssh`   | Connects to a remote server               |
+| `ls`    | List the files and directories            |
+| `cat`   | Display file contents                     |
+| `./`    | Specifies a file in the current directory |
+| `exit`  | Exits the current session                  |
 
 ##  Solution
 
@@ -26,9 +24,7 @@ After completing Level 1, I connected to the Bandit Level 2 account using SSH on
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 1.
-
-The login was successful, and I was connected to the Bandit Level 2 server.
+When asked for the password, I entered the password obtained in Level 1 and was connected to the **Bandit Level 2** server.
 
 ----------------------------------------------------------------------------------------
 
@@ -36,7 +32,7 @@ The login was successful, and I was connected to the Bandit Level 2 server.
 
 I checked the files available in the current directory using:
 
-```bash
+\```bash
 ls
 ```
 
@@ -52,15 +48,15 @@ This means there is a file named `--spaces in this filename--` in the current di
 
 ### Step 3: Read the File and Obtain the Password
 
-The filename contains **spaces** and starts with `--`, so we need to specify it correctly.
-
-`./` tells Linux that the file is in the **current directory**, while quotes tell the shell to treat the entire name as **one filename**.
+Using the following command:
 
 ```bash
 cat "./--spaces in this filename--"
 ```
+| `./` tells Linux that the file is in the current directory      |
+|" " tells the shell to treat the entire name as **one filename** |
 
-The command displayed the **PASSWORD** required to log in to Bandit Level 3.
+The command displayed the **PASSWORD** that was required to log into Bandit Level 3.
 
 I copied the password for the next login.
 
@@ -80,16 +76,14 @@ Then, I connected to the Bandit Level 3 account:
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from the `--spaces in this filename--` file.
+When asked for the password, I entered the password obtained and was connected to the Bandit Level 3 server.
 
-The login was successful, and I was now connected to the Bandit Level 3 server.
 
 ##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
 * **`cat`** — Displaying the contents of a file.
-* **Spaces in filenames** — Spaces separate arguments in the Linux shell.
-* **Quotes (`" "`)** — Used to treat a filename containing spaces as a single argument.
+* **Quotes (`" "`)** — Used to treat a filename containing spaces as a single one.
 * **`./`** — Used to specify a file in the current directory.
 
