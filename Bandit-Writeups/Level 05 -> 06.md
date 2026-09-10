@@ -2,9 +2,7 @@
 
 ##  Objective
 
-The goal of this level is to find the password for the next level. The password is stored in a file somewhere under the `inhere` directory.
-
-The required file has these properties:
+The goal of this level is to find the password for the next level. The password is obtained using following properties:
 
 * Human-readable
 * Exactly 1033 bytes in size
@@ -31,9 +29,7 @@ After completing Level 4, I connected to the Bandit Level 5 account using SSH on
 ssh bandit5@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 4.
-
-The login was successful, and I was connected to the Bandit Level 5 server.
+When askeed for the password, I entered the password obtained in Level 4 and was connected to the Bandit Level 5 server.
 
 -----
 
@@ -51,7 +47,9 @@ The output showed:
 inhere
 ```
 
-This means there is a directory named `inhere` in the current directory.
+This showed that there is a directory named `inhere` in the current directory.
+
+--
 
 ### Step 3: Enter the `inhere` Directory
 
@@ -69,9 +67,11 @@ ls
 
 The directory contained several subdirectories and files.
 
+----
+
 ### Step 4: Find the Required File
 
-I used the `find` command to search for the file that matches all the conditions given in the objective:
+I used the `find` command to search for the file that would match all the properties mentioned above:
 
 ```bash
 find . -type f -size 1033c ! -executable
@@ -80,26 +80,24 @@ find . -type f -size 1033c ! -executable
 ### 📖 Command Explanation
 
 * `find` → Searches for files and directories.
-* `.` → Starts the search from the **current directory**.
-* `-type f` → Searches only for **regular files**.
-* `-size 1033c` → Searches for files that are exactly **1033 bytes**. Here, `c` means bytes.
-* `! -executable` → Excludes files that are **executable**.
-
-
-The command returned the path of the file that matched all the required conditions.
+* `.` → Starts the search from the current directory.
+* `-type f` → Searches only for regular files.
+* `-size 1033c` → Searches for files that are exactly 1033 bytes. Here, `c` means bytes.
+* `! -executable` → Excludes files that are executable.
+  
+----
 
 ### Step 5: Read the File and Obtain the Password
 
-After finding the required file, I used the `cat` command to display its contents:
+The command returned a file that matched all the required properties. Then, I used the `cat` command to display its contents:
 
 ```bash
 cat ./maybehere07/.file2
 ```
 
-The command displayed the **PASSWORD** required to log in to Bandit Level 6.
+The command displayed the **PASSWORD** for Bandit Level 6.
 
-I copied the password for the next login.
-
+-----
 
 ### Step 6: Exit and Log in to Level 6
 
@@ -114,10 +112,7 @@ Then, I connected to the Bandit Level 6 account:
 ```bash
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
-
-When prompted for the password, I entered the password obtained from the required file.
-
-The login was successful, and I was now connected to the Bandit Level 6 server.
+When askeed for the password, I entered the password obtained in Level 5 and was connected to the Bandit Level 6 server.
 
 ##  Concepts Learned
 
