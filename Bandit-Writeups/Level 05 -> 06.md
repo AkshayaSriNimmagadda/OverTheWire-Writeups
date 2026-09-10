@@ -1,6 +1,6 @@
-# Bandit — Level 5 → Level 6
+# 🎯Bandit — Level 5 → Level 6
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in a file somewhere under the `inhere` directory.
 
@@ -10,7 +10,7 @@ The required file has these properties:
 * Exactly 1033 bytes in size
 * Not executable
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | **Command** | **Meaning**                                   |
 | ----------- | --------------------------------------------- |
@@ -21,7 +21,7 @@ The required file has these properties:
 | `cat`       | Display file contents                         |
 | `exit`      | Exit the current session                      |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 5 Server
 
@@ -119,7 +119,7 @@ When prompted for the password, I entered the password obtained from the require
 
 The login was successful, and I was now connected to the Bandit Level 6 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files and directories.
