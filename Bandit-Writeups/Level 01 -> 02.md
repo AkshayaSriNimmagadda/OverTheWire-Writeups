@@ -1,12 +1,12 @@
 # Bandit — Level 1 → Level 2
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the **password for the next level**. The password is stored in a file named `-` in the home directory.
 
 Since the filename is a single hyphen (`-`), it can be confused with standard input by Linux commands. Therefore, we need to specify the file path correctly.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | Command | Meaning                                 |
 | ------- | --------------------------------------- |
@@ -16,7 +16,7 @@ Since the filename is a single hyphen (`-`), it can be confused with standard in
 | `./`    | Specify a file in the current directory |
 | `exit`  | Exit the current session                |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 1 Server
 
@@ -92,7 +92,7 @@ When prompted for the **password**, I entered the password obtained from the `-`
 
 The login was successful, and I was now connected to the **Bandit Level 2** server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
