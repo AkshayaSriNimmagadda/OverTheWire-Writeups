@@ -1,6 +1,6 @@
-# Bandit — Level 6 → Level 7
+# 🎯Bandit — Level 6 → Level 7
 
-## 🎯 Objective
+## Objective
 
 The goal of this level is to find the password for the next level. The password is stored **somewhere on the server**.
 
@@ -10,7 +10,7 @@ The required file has these properties:
 * Owned by group `bandit6`
 * Exactly 33 bytes in size
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | **Command** | **Meaning**                      |
 | ----------- | -------------------------------- |
@@ -19,7 +19,7 @@ The required file has these properties:
 | `cat`       | Display file contents            |
 | `exit`      | Exit the current session         |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 6 Server
 
@@ -32,6 +32,8 @@ ssh bandit6@bandit.labs.overthewire.org -p 2220
 When prompted for the password, I entered the password obtained in Level 5.
 
 The login was successful, and I was connected to the Bandit Level 6 server.
+
+---
 
 ### Step 2: Search for the Required File
 
@@ -55,6 +57,9 @@ find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 
 The command returned the path of the file that matched all the required conditions.
 
+---
+
+
 ### Step 3: Read the File and Obtain the Password
 
 After finding the required file, I used the `cat` command to display its contents.
@@ -66,6 +71,8 @@ cat /var/lib/dpkg/info/bandit7.password
 The command displayed the **PASSWORD** required to log in to Bandit Level 7.
 
 I copied the password for the next login.
+
+---
 
 ### Step 4: Exit and Log in to Level 7
 
@@ -85,7 +92,7 @@ When prompted for the password, I entered the password obtained from the require
 
 The login was successful, and I was now connected to the Bandit Level 7 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`find`** — Searching for files based on specific conditions.
