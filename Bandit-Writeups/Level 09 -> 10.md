@@ -1,10 +1,10 @@
-# Bandit — Level 9 → Level 10
+# 🎯Bandit — Level 9 → Level 10
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in the file `data.txt` among several **human-readable strings**, and it is preceded by several `=` characters.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | **Command** | **Meaning**                             |
 | ----------- | --------------------------------------- |
@@ -14,7 +14,7 @@ The goal of this level is to find the password for the next level. The password 
 | `grep`      | Search for specific text                |
 | `exit`      | Exit the current session                |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 9 Server
 
@@ -27,6 +27,8 @@ ssh bandit9@bandit.labs.overthewire.org -p 2220
 When prompted for the password, I entered the password obtained in Level 8.
 
 The login was successful, and I was connected to the Bandit Level 9 server.
+
+----
 
 ### Step 2: List the Files
 
@@ -43,6 +45,8 @@ data.txt
 ```
 
 This means there is a file named `data.txt` in the current directory.
+
+----
 
 ### Step 3: Find the Readable Text
 
@@ -62,6 +66,8 @@ The command displayed the line containing the **PASSWORD** for Bandit Level 10.
 
 I copied the password for the next login.
 
+--
+
 ### Step 4: Exit and Log in to Level 10
 
 After obtaining the password, I exited the current SSH session:
@@ -80,11 +86,11 @@ When prompted for the password, I entered the password obtained from `data.txt`.
 
 The login was successful, and I was now connected to the Bandit Level 10 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
 * **`strings`** — Extracting human-readable text from binary data.
 * **`grep`** — Searching for specific text.
 * **Pipe (`|`)** — Passing the output of one command as input to another command.
-* Searching binary files for readable information.
+
