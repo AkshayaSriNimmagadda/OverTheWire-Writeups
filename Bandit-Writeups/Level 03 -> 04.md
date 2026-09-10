@@ -1,10 +1,10 @@
-# Bandit — Level 3 → Level 4
+# 🎯Bandit — Level 3 → Level 4
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in a **hidden file** inside the `inhere` directory.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | Command  | Meaning                                |
 | -------- | -------------------------------------- |
@@ -15,7 +15,7 @@ The goal of this level is to find the password for the next level. The password 
 | `cat`    | Display file contents                  |
 | `exit`   | Exit the current session               |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 3 Server
 
@@ -121,7 +121,7 @@ When prompted for the password, I entered the password obtained from the `.hidde
 
 The login was successful, and I was now connected to the Bandit Level 4 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
