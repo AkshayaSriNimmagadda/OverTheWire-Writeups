@@ -1,12 +1,12 @@
-# Bandit — Level 4 → Level 5
+# 🎯Bandit — Level 4 → Level 5
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in the **only human-readable file** inside the `inhere` directory.
 
 There are multiple files in the directory, so we need to identify which file contains readable text.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | Command | Meaning                     |
 | ------- | --------------------------- |
@@ -17,7 +17,7 @@ There are multiple files in the directory, so we need to identify which file con
 | `cat`   | Display file contents       |
 | `exit`  | Exit the current session    |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 4 Server
 
@@ -116,7 +116,7 @@ When prompted for the password, I entered the password obtained from the human-r
 
 The login was successful, and I was now connected to the Bandit Level 5 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
