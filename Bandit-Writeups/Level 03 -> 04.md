@@ -6,14 +6,14 @@ The goal of this level is to find the password for the next level. The password 
 
 ##  Commands Used
 
-| Command  | Meaning                                |
-| -------- | -------------------------------------- |
-| `ssh`    | Connect to a remote server             |
-| `ls`     | List files and directories             |
-| `cd`     | Change directory                       |
-| `ls -a` | List all files, including hidden files |
-| `cat`    | Display file contents                  |
-| `exit`   | Exit the current session               |
+| Command  |  Meaning                                 |
+| -------- | --------------------------------------  |
+| `ssh`    | Connects to a remote server             |
+| `ls`     | Lists files and directories             |
+| `cd`     | Changes directory                       |
+| `ls -a`  | Lists all files, including hidden files |
+| `cat`    | Displays the file contents              |
+| `exit`   | Exits the current session               |
 
 ##  Solution
 
@@ -25,16 +25,13 @@ After completing Level 2, I connected to the Bandit Level 3 account using SSH on
 ssh bandit3@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 2.
-
-The login was successful, and I was connected to the Bandit Level 3 server.
+When asked for the password, I entered the password obtained earlier in Level 2 and was connected to the Bandit Level 3 server.
 
 ----------
 
 ### Step 2: List the Files
 
-I checked the files available in the current directory using:
-
+I checked the files available using:
 ```bash
 ls
 ```
@@ -57,39 +54,22 @@ I used the `cd` command to enter the `inhere` directory:
 cd inhere
 ```
 
-After entering the directory, I checked the visible files using:
-
-```bash
-ls
-```
-
-There was no visible file displayed.
-
-Since the objective says that the password is stored in a **hidden file**, I needed to list all files, including hidden files.
-
-----------
-
-### Step 4: Find the Hidden File
-
-I used:
+Since the objective says that the password is stored in a **hidden file**, Using the following command:
 
 ```bash
 ls -a
 ```
 
-The `-a` option displays **all files**, including hidden files.
+It showed all the files including a hidden file which was:
 
-The output showed a hidden file named:
 
 ```text
 ...Hiding-From-You
 ```
 
-This is the file containing the password for the next level.
-
 ----------
 
-### Step 5: Read the Hidden File
+### Step 4: Read the Hidden File
 
 I used the `cat` command to display the contents of the hidden file:
 
@@ -117,9 +97,8 @@ Then, I connected to the Bandit Level 4 account:
 ssh bandit4@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from the `.hidden` file.
+When asked for the password, I entered the password obtained earlier from Level 3 and was connected to the Bandit Level 4 server.
 
-The login was successful, and I was now connected to the Bandit Level 4 server.
 
 ##  Concepts Learned
 
@@ -127,5 +106,5 @@ The login was successful, and I was now connected to the Bandit Level 4 server.
 * **`ls`** — Listing files in a directory.
 * **`cd`** — Moving between directories.
 * **`ls -a`** — Listing all files, including hidden files.
-* **Hidden files** — Files beginning with `.` are hidden in Linux.
+* **Hidden file** — Files beginning with `.` are hidden in Linux.
 * **`cat`** — Displaying the contents of a file.
