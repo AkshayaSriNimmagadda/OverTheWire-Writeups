@@ -62,7 +62,7 @@ I used the `cat` command to display the contents of the file:
 cat readme
 ```
 
-This displayed the **PASSWORD** for the Level 1.
+This command displayed the **PASSWORD** for the Level 1.
 
 I copied the password to use for the next login.
 
