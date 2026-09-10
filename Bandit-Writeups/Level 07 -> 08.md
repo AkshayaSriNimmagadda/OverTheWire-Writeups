@@ -1,12 +1,12 @@
-# Bandit — Level 7 → Level 8
+# 🎯Bandit — Level 7 → Level 8
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in the file named `data.txt` next to the word `millionth`.
 
 We need to search the file and find the line containing the word `millionth`.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | **Command** | **Meaning**                |
 | ----------- | -------------------------- |
@@ -16,7 +16,7 @@ We need to search the file and find the line containing the word `millionth`.
 | `cat`       | Display file contents      |
 | `exit`      | Exit the current session   |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 7 Server
 
@@ -76,7 +76,7 @@ When prompted for the password, I entered the password obtained from `data.txt`.
 
 The login was successful, and I was now connected to the Bandit Level 8 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
