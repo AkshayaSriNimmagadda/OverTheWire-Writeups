@@ -61,7 +61,7 @@ Therefore, I specified the file using its relative path:
 cat ./-
 ```
 
-The command displayed the **PASSWORD** for Level 2.
+This command displayed the **PASSWORD** for Level 2.
 
 I copied the password for the next login.
 
