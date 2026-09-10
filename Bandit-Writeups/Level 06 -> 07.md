@@ -60,7 +60,7 @@ The command returned the path of the file that matched all the required conditio
 After finding the required file, I used the `cat` command to display its contents.
 
 ```bash
-cat /var/lib/dpkg/info/bandit7.password
+cat /var/lib/dpkg/info/bandit7.password 
 ```
 
 The command displayed the **PASSWORD** required to log in to Bandit Level 7.
