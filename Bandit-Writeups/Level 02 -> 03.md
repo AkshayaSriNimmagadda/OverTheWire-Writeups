@@ -1,12 +1,12 @@
-# Bandit — Level 2 → Level 3
+# 🎯Bandit — Level 2 → Level 3
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in a file named `--spaces in this filename--` in the home directory.
 
 Since the filename contains **spaces**, we need to handle the filename correctly when using Linux commands.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | Command | Meaning                                 |
 | ------- | --------------------------------------- |
@@ -16,7 +16,7 @@ Since the filename contains **spaces**, we need to handle the filename correctly
 | `./`    | Specify a file in the current directory |
 | `exit`  | Exit the current session                |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 2 Server
 
@@ -84,7 +84,7 @@ When prompted for the password, I entered the password obtained from the `--spac
 
 The login was successful, and I was now connected to the Bandit Level 3 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
