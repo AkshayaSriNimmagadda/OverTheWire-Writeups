@@ -32,7 +32,7 @@ When asked for the password, I entered the password obtained in Level 1 and was 
 
 I checked the files available in the current directory using:
 
-\```bash
+```bash
 ls
 ```
 
