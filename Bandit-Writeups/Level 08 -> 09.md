@@ -1,12 +1,12 @@
-# Bandit — Level 8 → Level 9
+# 🎯Bandit — Level 8 → Level 9
 
-## 🎯 Objective
+##  Objective
 
 The goal of this level is to find the password for the next level. The password is stored in the file `data.txt`.
 
 The password is the **only line of text that occurs only once** in the file.
 
-## 🛠️ Commands Used
+##  Commands Used
 
 | **Command** | **Meaning**                   |
 | ----------- | ----------------------------- |
@@ -16,7 +16,7 @@ The password is the **only line of text that occurs only once** in the file.
 | `uniq`      | Find or remove repeated lines |
 | `exit`      | Exit the current session      |
 
-## 🔍 Solution
+##  Solution
 
 ### Step 1️: Connect to the Bandit Level 8 Server
 
@@ -56,7 +56,7 @@ I used the following command:
 sort data.txt | uniq -u
 ```
 
-### 📖 Command Explanation
+###  Command Explanation
 
 * `sort data.txt` → Sorts all the lines in `data.txt`.
 * `|` → Sends the output of the first command to the next command.
@@ -86,7 +86,7 @@ When prompted for the password, I entered the password obtained from `data.txt`.
 
 The login was successful, and I was now connected to the Bandit Level 9 server.
 
-## 🧠 Concepts Learned
+##  Concepts Learned
 
 * **SSH** — Connecting to a remote server.
 * **`ls`** — Listing files in a directory.
