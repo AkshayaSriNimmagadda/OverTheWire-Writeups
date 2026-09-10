@@ -83,4 +83,4 @@ The login was successful, and I was now connected to the Bandit Level 8 server.
 * **`grep`** — Searching for specific text inside files.
 * **`cat`** — Displaying file contents.
 * **Searching large files** — Using `grep` is faster than manually checking every line.
-* Using the password obtained from one level to access the next level.
+
