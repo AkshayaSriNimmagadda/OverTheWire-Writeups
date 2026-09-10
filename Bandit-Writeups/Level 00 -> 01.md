@@ -1,10 +1,10 @@
-#   Bandit — Level 0 → Level 1
+##🎯 Bandit — Level 0 → Level 1
 
-##  Objective
+## Objective
 
-The goal of this level is to connect to the **Bandit Level 0** server using SSH and find the password required to log in to **Level 1**.
+The goal of this level is to connect to the **Bandit Level 0** server using SSH and find the password to log into **Level 1**.
 
-##  Commands Used
+## Commands Used
 
 | Command | Meaning                    |
 | ------- | -------------------------- |
@@ -26,10 +26,10 @@ ssh bandit0@bandit.labs.overthewire.org -p 2220
 
 **Meaning:**
 
-* `ssh` → Connect to a remote server
+* `ssh` → Connects to a remote server
 * `bandit0` → Username
 * `bandit.labs.overthewire.org` → Server address
-* `-p 2220` → Connect using port `2220`
+* `-p 2220` → Connects using port `2220`
 
 The password provided for **Level 0** is:
 
@@ -37,19 +37,18 @@ The password provided for **Level 0** is:
 bandit0
 ```
 
-After entering the password, the connection was successfully established.
+After entering the password, the connection was established.
 
 ---
 
 ## Step 2: List the Files
 
-After logging in, I checked the files available in the current directory using:
+After logging in, I checked the files using the following command:
 
 ```bash
 ls
 ```
 
-The output: readme
 
 This showed that there was a file named `readme` in the current directory.
 
@@ -63,9 +62,7 @@ I used the `cat` command to display the contents of the file:
 cat readme
 ```
 
-This displayed the contents of the `readme` file.
-
-The file contained the **password for the next level(Level 1)**.
+This displayed the contents of the `readme` file and those contents were **PASSWORD** for the Level 1.
 
 I copied the password to use for the next login.
 
@@ -83,15 +80,13 @@ exit
 
 ## Step 5: Log in to Level 1
 
-Next, I connected to the **Bandit Level 1** account:
+Next, I connected to the **Bandit Level 1**:
 
 ```bash
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from the `readme` file.
-
-The login was successful, and I was now connected to the **Bandit Level 1** server.
+When asked for the password, I entered the password obtained earlier and therefore I was connected to **Bandit Level 1** server.
 
 
 
@@ -101,4 +96,3 @@ The login was successful, and I was now connected to the **Bandit Level 1** serv
 * **`ls`** — Listing files
 * **`cat`** — Reading file contents
 * **`exit`** — Closing an SSH session
-* Using the password obtained from one level to access the next level
