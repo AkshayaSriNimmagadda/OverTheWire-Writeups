@@ -1,11 +1,8 @@
-# Bandit — Level 1 → Level 2
+# 🎯 Bandit — Level 1 → Level 2
 
 ##  Objective
 
-The goal of this level is to find the **password for the next level**. The password is stored in a file named `-` in the home directory.
-
-Since the filename is a single hyphen (`-`), it can be confused with standard input by Linux commands. Therefore, we need to specify the file path correctly.
-
+The goal of this level is to find the **password for the next level**. The password is stored in a file named `-` directory.
 ##  Commands Used
 
 | Command | Meaning                                 |
@@ -26,15 +23,13 @@ After completing Level 0, I connected to the Bandit Level 1 account using SSH on
 ssh bandit1@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from the `readme` file in Level 0.
-
-The login was successful, and I was connected to the Bandit Level 1 server.
+When asked for the password, I entered the password obtained earlier and was connected to Bandit Level 1 server.
 
 ----------------------------------------------------------------------------------------
 
 ### Step 2: List the Files
 
-I checked the files available in the current directory using:
+I checked the files available using:
 
 ```bash
 ls
@@ -46,19 +41,19 @@ The output showed:
 -
 ```
 
-This means there is a file named `-` in the current directory.
+This showed that there is a file named `-` in the current directory.
 
 ----------------------------------------------------------------------------------------
 
 ### Step 3: Read the `-` File and Obtain the Password
 
-Normally, we use `cat filename` to read a file. However, because `-` has a special meaning in many Linux commands, using:
+Since `-` has a another meaning in many Linux commands, using:
 
 ```bash
 cat -
 ```
 
-does not read the file as expected. Instead, `-` is commonly interpreted as **standard input (stdin)**.
+does not read the file. Instead, `-` is commonly known as **standard input (stdin)**.
 
 Therefore, I specified the file using its relative path:
 
@@ -66,9 +61,7 @@ Therefore, I specified the file using its relative path:
 cat ./-
 ```
 
-The command displayed the contents of the `-` file.
-
- The contents of the file contain the **PASSWORD** required to log in to Bandit Level 2.
+The command displayed the **PASSWORD** for Level 2.
 
 I copied the password for the next login.
 
@@ -88,9 +81,7 @@ Then, I connected to the Bandit Level 2 account:
 ssh bandit2@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the **password**, I entered the password obtained from the `-` file.
-
-The login was successful, and I was now connected to the **Bandit Level 2** server.
+When asked for the **password**, I entered the password obtained earlier and was connected to the **Bandit Level 2** server.
 
 ##  Concepts Learned
 
@@ -98,5 +89,5 @@ The login was successful, and I was now connected to the **Bandit Level 2** serv
 * **`ls`** — Listing files in a directory.
 * **`cat`** — Displaying the contents of a file.
 * **`./`** — Specifying a file in the current directory.
-* **Special filenames** — A filename such as `-` can have a special meaning to Linux commands.
-* **Standard input (`stdin`)** — `-` is commonly used by Linux commands to represent input from the terminal.
+* **Special filenames** — A filename such as `-` can have a special meaning in Linux commands.
+* **Standard input (`stdin`)** — `-` is used by Linux commands to represent input from the terminal.
