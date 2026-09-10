@@ -49,7 +49,7 @@ inhere
 
 This showed that there is a directory named `inhere` in the current directory.
 
---
+--------------------------
 
 ### Step 3: Enter the `inhere` Directory
 
