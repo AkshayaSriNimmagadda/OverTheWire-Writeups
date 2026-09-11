@@ -2,9 +2,7 @@
 
 ##  Objective
 
-The goal of this level is to find the password for the next level. The password is stored in the file named `data.txt` next to the word `millionth`.
-
-We need to search the file and find the line containing the word `millionth`.
+The goal of this level is to find the password for the next level. The password is stored in the file  next to the word `millionth`.
 
 ##  Commands Used
 
@@ -26,13 +24,13 @@ After completing Level 6, I connected to the Bandit Level 7 account using SSH on
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 6.
+When askeed for the password, I entered the password obtained in Level 6 and was connected to the Bandit Level 7 server.
 
-The login was successful, and I was connected to the Bandit Level 7 server.
+---------
 
 ### Step 2: List the Files
 
-I checked the files available in the current directory using:
+I checked the files available using:
 
 ```bash
 ls
@@ -44,19 +42,21 @@ The output showed:
 data.txt
 ```
 
-This means there is a file named `data.txt` in the current directory.
+This showed that there is a file named `data.txt` in the current directory.
+
+----------------
 
 ### Step 3: Search for the Word `millionth`
 
-The file contains a large amount of text, so instead of checking each and every line manually, I used the `grep` command.
+The file had a large amount of text, so instead of checking each and every line, I used the following command:
 
 ```bash
 grep "millionth" data.txt
 ```
 
-The command displayed the line containing `millionth` followed by the **PASSWORD**.
+The above command displayed the line containing `millionth` followed by the **PASSWORD** for Level 8.
 
-I copied the password for the next login.
+---------------------
 
 ### Step 4: Exit and Log in to Level 8
 
@@ -72,9 +72,8 @@ Then, I connected to the Bandit Level 8 account:
 ssh bandit8@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from `data.txt`.
+When askeed for the password, I entered the password obtained in Level 8 and was connected to the Bandit Level 9 server.
 
-The login was successful, and I was now connected to the Bandit Level 8 server.
 
 ##  Concepts Learned
 
@@ -82,5 +81,5 @@ The login was successful, and I was now connected to the Bandit Level 8 server.
 * **`ls`** — Listing files in a directory.
 * **`grep`** — Searching for specific text inside files.
 * **`cat`** — Displaying file contents.
-* **Searching large files** — Using `grep` is faster than manually checking every line.
+
 
