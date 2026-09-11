@@ -96,5 +96,4 @@ exit
 * **`-i` option** — Specifies the identity/private key file used for SSH authentication.
 * **`localhost`** — Refers to the current machine/server.
 * **`cat`** — Used to display the contents of a file.
-* **SSH Port `2220`** — The port used by the Bandit SSH server.
 * **Key-Based Authentication** — SSH can authenticate users using a private key instead of a password.
