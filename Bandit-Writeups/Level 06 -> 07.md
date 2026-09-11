@@ -42,7 +42,7 @@ I used the following command:
 find / -user bandit7 -group bandit6 -size 33c 2>/dev/null
 ```
 
-### 📖 Command Explanation
+###  Command Explanation
 
 * `find` → Searches for files and directories.
 * `/` → Starts the search from the root directory, which means the entire server filesystem is searched.
