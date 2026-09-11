@@ -97,7 +97,8 @@ The output will tell us which compression format is being used.
 For example:
 
 data: gzip compressed data
-Step 6: Decompress the File
+
+### Step 6: Decompress the File
 
 If file data shows that it is a gzip compressed file, rename it with the .gz extension:
 
@@ -113,7 +114,7 @@ file data
 
 The file may now be another type of compressed file.
 
-Step 7: Continue Decompressing
+### Step 7: Continue Decompressing
 
 The file is compressed multiple times, so we need to repeat the process.
 
@@ -145,7 +146,7 @@ file data
 
 The file command tells us what type of file we have and therefore which command should be used next.
 
-Step 8: Read the Password
+### Step 8: Read the Password
 
 After repeatedly decompressing and extracting the file, the final file will contain readable text.
 
@@ -155,7 +156,7 @@ cat data
 
 The output is the password for Level 13.
 
-Step 9: Exit and Log in to Level 13
+### Step 9: Exit and Log in to Level 13
 
 After obtaining the password, exit the current session:
 
