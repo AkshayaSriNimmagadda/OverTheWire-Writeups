@@ -2,7 +2,7 @@
 
 ## Objective
 
-The goal of this level is to find the password for the next level. The password for **Level 15** can be retrieved by submitting the **current password to port 30000 on localhost**.
+The goal of this level is to find the password for **Level 15** by submitting the **current password to port 30000 on localhost**.
 
 ## Commands Used
 
