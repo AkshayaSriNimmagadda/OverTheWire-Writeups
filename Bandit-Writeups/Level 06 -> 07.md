@@ -28,7 +28,7 @@ After completing Level 5, I connected to the Bandit Level 6 account using SSH on
 ssh bandit6@bandit.labs.overthewire.org -p 2220
 ```
 
-When askeed for the password, I entered the password obtained in Level 5 and was connected to the Bandit Level 6 server.
+When asked for the password, I entered the password obtained in Level 5 and was connected to the Bandit Level 6 server.
 
 ---
 
@@ -80,7 +80,7 @@ Then, I connected to the Bandit Level 7 account:
 ssh bandit7@bandit.labs.overthewire.org -p 2220
 ```
 
-When askeed for the password, I entered the password obtained in Level 6 and was connected to the Bandit Level 7 server.
+When asked for the password, I entered the password obtained in Level 6 and was connected to the Bandit Level 7 server.
 
 
 ##  Concepts Learned
