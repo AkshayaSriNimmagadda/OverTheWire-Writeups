@@ -2,9 +2,7 @@
 
 ##  Objective
 
-The goal of this level is to find the password for the next level. The password is stored in the file `data.txt`.
-
-The password is the **only line of text that occurs only once** in the file.
+The goal of this level is to find the password for the next level. The password is a unique line that appears only once in the file `data.txt`.
 
 ##  Commands Used
 
@@ -26,13 +24,13 @@ After completing Level 7, I connected to the Bandit Level 8 account using SSH on
 ssh bandit8@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 7.
+When askeed for the password, I entered the password obtained in Level 7 and was connected to the Bandit Level 8 server.
 
-The login was successful, and I was connected to the Bandit Level 8 server.
+------------------
 
 ### Step 2: List the Files
 
-I checked the files available in the current directory using:
+I checked the files available using:
 
 ```bash
 ls
@@ -44,13 +42,13 @@ The output showed:
 data.txt
 ```
 
-This means there is a file named `data.txt` in the current directory.
+This showed that there is a file named `data.txt`.
+
+-------
 
 ### Step 3: Find the Unique Line
 
-The file contains many lines, and most of them are repeated. The objective says that the password is an unique line.
-
-I used the following command:
+The file ha many lines. Since int is mentioned that the password is a unique line, I used the following commmand.
 
 ```bash
 sort data.txt | uniq -u
@@ -60,13 +58,11 @@ sort data.txt | uniq -u
 
 * `sort data.txt` → Sorts all the lines in `data.txt`.
 * `|` → Sends the output of the first command to the next command.
-* `uniq -u` → Displays only the lines that occur **once**.
+* `uniq -u` → Displays only the lines that occur once
 
-The `sort` command is important because `uniq` checks only **consecutive duplicate lines**. Sorting puts identical lines together, allowing `uniq` to identify the repeated lines correctly.
+The command displayed the **PASSWORD** for Level 9.
 
-The command displayed the **PASSWORD** required to log in to Bandit Level 9.
-
-I copied the password for the next login.
+--------
 
 ### Step 4: Exit and Log in to Level 9
 
