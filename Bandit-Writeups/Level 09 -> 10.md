@@ -2,7 +2,7 @@
 
 ##  Objective
 
-The goal of this level is to find the password for the next level. The password is stored in the file `data.txt` among several **human-readable strings**, and it is preceded by several `=` characters.
+The goal of this level is to find the password for the next level. The password is stored in the file  several strings which is preceded by several `=` characters.
 
 ##  Commands Used
 
@@ -24,15 +24,14 @@ After completing Level 8, I connected to the Bandit Level 9 account using SSH on
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained in Level 8.
+When askeed for the password, I entered the password obtained in Level 8 and was connected to the Bandit Level 9 server.
 
-The login was successful, and I was connected to the Bandit Level 9 server.
 
 ----
 
 ### Step 2: List the Files
 
-I checked the files available in the current directory using:
+I checked the files available using:
 
 ```bash
 ls
@@ -44,7 +43,7 @@ The output showed:
 data.txt
 ```
 
-This means there is a file named `data.txt` in the current directory.
+This showed that there is a file named `data.txt` in the current directory.
 
 ----
 
@@ -64,9 +63,7 @@ strings data.txt | grep "="
 
 The command displayed the line containing the **PASSWORD** for Bandit Level 10.
 
-I copied the password for the next login.
-
---
+----
 
 ### Step 4: Exit and Log in to Level 10
 
@@ -82,9 +79,8 @@ Then, I connected to the Bandit Level 10 account:
 ssh bandit10@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from `data.txt`.
+When askeed for the password, I entered the password obtained earlier and was connected to the Bandit Level 10 server.
 
-The login was successful, and I was now connected to the Bandit Level 10 server.
 
 ##  Concepts Learned
 
