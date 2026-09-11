@@ -77,7 +77,7 @@ I used the `find` command to search for the file that would match all the proper
 find . -type f -size 1033c ! -executable
 ```
 
-### 📖 Command Explanation
+###  Command Explanation
 
 * `find` → Searches for files and directories.
 * `.` → Starts the search from the current directory.
