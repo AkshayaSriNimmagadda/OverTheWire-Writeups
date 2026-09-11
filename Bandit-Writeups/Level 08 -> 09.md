@@ -78,9 +78,7 @@ Then, I connected to the Bandit Level 9 account:
 ssh bandit9@bandit.labs.overthewire.org -p 2220
 ```
 
-When prompted for the password, I entered the password obtained from `data.txt`.
-
-The login was successful, and I was now connected to the Bandit Level 9 server.
+When askeed for the password, I entered the password obtained earlier and was connected to the Level 9 server.
 
 ##  Concepts Learned
 
